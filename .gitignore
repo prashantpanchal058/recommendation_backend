@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+.Python
+*.egg-info/
+dist/
+build/
+
+src/model_artifacts/
+
+# Virtual Environment
+venv/
+.venv/
+ENV/
+
+# Python Cache
+**/__pycache__/
+*.pyc
+
+# Heavy ML/DL Model Artifacts & Datasets
+*.pkl
+*.h5
+*.pth
+*.onnx
+*.csv
+src/model_artifacts/
+
+
+# Virtual environment
+venv/
+env/
+.env/
+.venv/
+
+# Environment variables (NEVER commit these)
+.env
+.env.local
+.env.production
+
+# Docker
+.dockerignore
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
