@@ -28,11 +28,14 @@ def download_artifacts(save_dir: str):
         print("✅ Model files already present, skipping download")
         return
 
+    hf_token = os.getenv("HF_TOKEN")  # from .env
+
     print(f"⬇️  Downloading model artifacts from HuggingFace: {HF_REPO_ID} ...")
     os.makedirs(save_dir, exist_ok=True)
     snapshot_download(
         repo_id=HF_REPO_ID,
         local_dir=save_dir,
+        token=hf_token,                              # ← added
         ignore_patterns=["*.md", ".gitattributes"],
     )
     print("✅ Download complete")
