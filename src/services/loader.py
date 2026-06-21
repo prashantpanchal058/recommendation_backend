@@ -8,7 +8,7 @@ from sklearn.decomposition import TruncatedSVD
 
 _artifacts = {}
 
-HF_REPO_ID = os.getenv("HF_REPO_ID", "your-username/your-model-repo")  # set in .env
+HF_REPO_ID = os.getenv("HF_REPO_ID", "prashantpanchal058/recommendation-models")  # set in .env
 
 def download_artifacts(save_dir: str):
     """Download model files from HuggingFace Hub if not present locally."""
